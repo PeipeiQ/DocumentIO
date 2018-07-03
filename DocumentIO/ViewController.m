@@ -23,10 +23,10 @@
     //[manager writeArray:@[@1,@3] toFile:@"app"];
     //[manager writeString:@"bbbbb" toFile:@"app5docx"];
     manager.enableOverwrite = false;
-    UIImage *image = [UIImage imageNamed:@"111.jpg"];
-    NSData *data = UIImageJPEGRepresentation(image, 1);
+    //UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    //NSData *data = UIImageJPEGRepresentation(image, 1);
     
-    [manager writeNSData:data toFile:@"ppp"];
+    //[manager writeNSData:data toFile:@"ppp"];
     
 }
 
