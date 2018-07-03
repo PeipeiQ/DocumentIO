@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DocumentIOManager.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    DocumentIOManager *manager = [DocumentIOManager managerWithCacheStrategy:CacheInDiskOnly];
+    manager.fileType = CachesDirectory;
+    //[manager writeArray:@[@1,@3] toFile:@"app"];
+    //[manager writeString:@"bbbbb" toFile:@"app5docx"];
+    manager.enableOverwrite = false;
+    UIImage *image = [UIImage imageNamed:@"111.jpg"];
+    NSData *data = UIImageJPEGRepresentation(image, 1);
+    
+    [manager writeNSData:data toFile:@"ppp"];
+    
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
 
 
 @end

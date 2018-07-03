@@ -15,6 +15,12 @@
 		9699DCC520DB5BC000896914 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DCC420DB5BC000896914 /* main.m */; };
 		9699DCCF20DB5BC000896914 /* DocumentIOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DCCE20DB5BC000896914 /* DocumentIOTests.m */; };
 		9699DCDA20DB5BC000896914 /* DocumentIOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DCD920DB5BC000896914 /* DocumentIOUITests.m */; };
+		9699DD7A20E6217F00896914 /* DocumentIOManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD7920E6217F00896914 /* DocumentIOManager.m */; };
+		9699DD7D20E63B0700896914 /* DocumentIOCacheInMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD7C20E63B0700896914 /* DocumentIOCacheInMemory.m */; };
+		9699DD8020E63B1A00896914 /* DocumentIOCacheInDisk.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD7F20E63B1A00896914 /* DocumentIOCacheInDisk.m */; };
+		9699DD8320E63C5800896914 /* DocumentIOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9699DD8220E63C5800896914 /* DocumentIOCache.m */; };
+		9699DD8920EB970800896914 /* 111.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9699DD8820EB970800896914 /* 111.JPG */; };
+		9699DD8B20EB97CA00896914 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9699DD8A20EB97CA00896914 /* Image.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,16 @@
 		9699DCD520DB5BC000896914 /* DocumentIOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentIOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9699DCD920DB5BC000896914 /* DocumentIOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentIOUITests.m; sourceTree = "<group>"; };
 		9699DCDB20DB5BC000896914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9699DD7820E6217F00896914 /* DocumentIOManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentIOManager.h; sourceTree = "<group>"; };
+		9699DD7920E6217F00896914 /* DocumentIOManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentIOManager.m; sourceTree = "<group>"; };
+		9699DD7B20E63B0700896914 /* DocumentIOCacheInMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentIOCacheInMemory.h; sourceTree = "<group>"; };
+		9699DD7C20E63B0700896914 /* DocumentIOCacheInMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentIOCacheInMemory.m; sourceTree = "<group>"; };
+		9699DD7E20E63B1A00896914 /* DocumentIOCacheInDisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentIOCacheInDisk.h; sourceTree = "<group>"; };
+		9699DD7F20E63B1A00896914 /* DocumentIOCacheInDisk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentIOCacheInDisk.m; sourceTree = "<group>"; };
+		9699DD8120E63C5800896914 /* DocumentIOCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentIOCache.h; sourceTree = "<group>"; };
+		9699DD8220E63C5800896914 /* DocumentIOCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentIOCache.m; sourceTree = "<group>"; };
+		9699DD8820EB970800896914 /* 111.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111.JPG; sourceTree = "<group>"; };
+		9699DD8A20EB97CA00896914 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,8 @@
 		9699DCB420DB5BB900896914 /* DocumentIO */ = {
 			isa = PBXGroup;
 			children = (
+				9699DD8720EB96E800896914 /* Source */,
+				9699DD7720E6213C00896914 /* DocumentIO */,
 				9699DCB520DB5BB900896914 /* AppDelegate.h */,
 				9699DCB620DB5BB900896914 /* AppDelegate.m */,
 				9699DCB820DB5BB900896914 /* ViewController.h */,
@@ -110,6 +128,7 @@
 				9699DCC020DB5BBF00896914 /* LaunchScreen.storyboard */,
 				9699DCC320DB5BBF00896914 /* Info.plist */,
 				9699DCC420DB5BC000896914 /* main.m */,
+				9699DD8A20EB97CA00896914 /* Image.xcassets */,
 			);
 			path = DocumentIO;
 			sourceTree = "<group>";
@@ -130,6 +149,29 @@
 				9699DCDB20DB5BC000896914 /* Info.plist */,
 			);
 			path = DocumentIOUITests;
+			sourceTree = "<group>";
+		};
+		9699DD7720E6213C00896914 /* DocumentIO */ = {
+			isa = PBXGroup;
+			children = (
+				9699DD7820E6217F00896914 /* DocumentIOManager.h */,
+				9699DD7920E6217F00896914 /* DocumentIOManager.m */,
+				9699DD7B20E63B0700896914 /* DocumentIOCacheInMemory.h */,
+				9699DD7C20E63B0700896914 /* DocumentIOCacheInMemory.m */,
+				9699DD7E20E63B1A00896914 /* DocumentIOCacheInDisk.h */,
+				9699DD7F20E63B1A00896914 /* DocumentIOCacheInDisk.m */,
+				9699DD8120E63C5800896914 /* DocumentIOCache.h */,
+				9699DD8220E63C5800896914 /* DocumentIOCache.m */,
+			);
+			path = DocumentIO;
+			sourceTree = "<group>";
+		};
+		9699DD8720EB96E800896914 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9699DD8820EB970800896914 /* 111.JPG */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +278,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9699DCC220DB5BBF00896914 /* LaunchScreen.storyboard in Resources */,
+				9699DD8920EB970800896914 /* 111.JPG in Resources */,
+				9699DD8B20EB97CA00896914 /* Image.xcassets in Resources */,
 				9699DCBF20DB5BBF00896914 /* Assets.xcassets in Resources */,
 				9699DCBD20DB5BB900896914 /* Main.storyboard in Resources */,
 			);
@@ -262,8 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9699DD7A20E6217F00896914 /* DocumentIOManager.m in Sources */,
+				9699DD8020E63B1A00896914 /* DocumentIOCacheInDisk.m in Sources */,
 				9699DCBA20DB5BB900896914 /* ViewController.m in Sources */,
 				9699DCC520DB5BC000896914 /* main.m in Sources */,
+				9699DD7D20E63B0700896914 /* DocumentIOCacheInMemory.m in Sources */,
+				9699DD8320E63C5800896914 /* DocumentIOCache.m in Sources */,
 				9699DCB720DB5BB900896914 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
